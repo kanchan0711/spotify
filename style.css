@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+   
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.left{
+    width: 25vw;
+}
+.right{
+    width: 75vw;
+}
+
+.list ul li{
+    display: flex;
+    gap:15px;
+    font-size: 17px;
+    font-weight: bold;
+    list-style: none;
+}
+.your-library{
+    display: flex;
+    gap: 20px;
+}
+.library{
+    min-height: 80vh;
+    position: relative;
+}
+.footer{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 2%;
+    font-size: 12px;
+}
+.footer a{
+    list-style: none;
+    color: gray;
+}
+.right{
+    margin: 10px 0 10px 0;
+    padding: 10px;
+}
+.header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 5px;
+     background-color: #0e0e0e;
+}
+.signUpBtn{
+    border: none;
+    font-size: 16px;
+    background-color: #0e0e0e;
+    color: rgb(168, 165, 165);
+    font-weight: bold;
+    padding: 20px;
+}
+.signUpBtn:hover{
+    color: white;
+    font-size: 17px;
+}
+.logInBtn{
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 25px;
+    width: 100px;
+}
+.logInBtn:hover{
+    width: 102px;
+    padding: 16px;
+}
+.spotify-Playlist h2{
+    padding: 15px 0 10px 10px;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;   
+    overflow: scroll;
+    max-height: 60vw;
+}
+.card{
+    /* background-color: gray; */
+    width: 17vw;
+    padding: 10px;
+    overflow: hidden; 
+    position: relative;
+    border-radius: 5px;
+    position: relative;
+}
+.card img{
+    object-fit: cover;
+    width: 20vw;
+    width: 17vw;
+}
+.card:hover{
+    background-color: #242424;
+    /* opacity: 0.5; */
+}
+
+
+
+.play {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    background-color: rgb(30,215,96);
+    border-radius: 50%;
+    top: 13vw;
+    right: 2vw;
+  }
+  
+  .play svg {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+    color: black; /* Change the stroke color to black */
+  }
+  
+
+
+
+  ::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #242424; /* Background of the scrollbar track */
+    border-radius: 10px; /* Round edges */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #5d5c5c; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Round edges */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+  }

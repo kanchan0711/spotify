@@ -1,0 +1,36 @@
+.flex{
+    display: flex;
+}
+.justifyContent{
+    justify-content: center;
+}
+.itemCenter{
+    align-items: center;
+}
+.bg-gray{
+    background-color: #121212;
+}
+.border-rad{
+    border-radius: 5px;
+}
+.logo{
+    width: 20px;
+}
+.m-1{
+    margin: 5px;
+}
+.p-1{
+    padding: 15px;
+}
+.pt-3{
+    padding-top: 20px;
+}
+.m-2{
+    margin: 10px;
+}
+.logo-svg{
+    width: 30px;
+}
+.invert{
+    filter: brightness(0) invert(1)
+}
