@@ -24,10 +24,20 @@
             </li>
           </ul>
         </div>
-        <div class="library bg-gray border-rad m-2 list p-1">
+        <div class="library bg-gray border-rad m-2 list">
           <div class="your-library">
-            <img class="invert logo-svg t-0" src="library.svg" alt="library" />
-            <h3>Your Library</h3>
+            <div class="library-heading p-1">
+              <img
+                class="invert logo-svg t-0"
+                src="library.svg"
+                alt="library"
+              />
+              <h3>Your Library</h3>
+            </div>
+
+            <div class="playlist">
+              <ul></ul>
+            </div>
           </div>
 
           <div class="footer p-1">
@@ -157,44 +167,52 @@
           </div>
         </div>
         <div class="spotify-Playlist">
-            <h2>Spotify Playlist</h2>
-            <div class="card-container">
-                <div class="card">
-                    <img
-                    aria-hidden="false"
-                    draggable="false"
-                    loading="lazy"
-                    src="https://i.scdn.co/image/ab67706f00000002cd17d41419faa97069e06c16"
-                    data-testid="card-image"
-                    alt=""
-                    class="mMx2LUixlnN_Fu45JpFB yMQTWVwLJ5bV8VGiaqU3 Yn2Ei5QZn19gria6LjZj"
-                  />
-                  <h3>Rainy Hits</h3>
-                  <p>Music for your mood only for you</p>
-                </div>
-                <div class="card">
-                    <img
-                    aria-hidden="false"
-                    draggable="false"
-                    loading="lazy"
-                    src="https://i.scdn.co/image/ab67706f00000002cd17d41419faa97069e06c16"
-                    data-testid="card-image"
-                    alt=""
-                    class="mMx2LUixlnN_Fu45JpFB yMQTWVwLJ5bV8VGiaqU3 Yn2Ei5QZn19gria6LjZj"
-                  />
-                  <h3>Rainy Hits</h3>
-                  <p>Music for your mood only for you</p>
-                </div>
-                
-
-
-
-
+          <h2>Spotify Playlist</h2>
+          <div class="card-container">
+            <div class="card">
+              <img
+                aria-hidden="false"
+                draggable="false"
+                loading="lazy"
+                src="https://i.scdn.co/image/ab67706f00000002cd17d41419faa97069e06c16"
+                data-testid="card-image"
+                alt=""
+                class="mMx2LUixlnN_Fu45JpFB yMQTWVwLJ5bV8VGiaqU3 Yn2Ei5QZn19gria6LjZj"
+              />
+              <h3>Rainy Hits</h3>
+              <p>Music for your mood only for you</p>
             </div>
-           
+            <div class="card">
+              <img
+                aria-hidden="false"
+                draggable="false"
+                loading="lazy"
+                src="https://i.scdn.co/image/ab67706f00000002cd17d41419faa97069e06c16"
+                data-testid="card-image"
+                alt=""
+                class="mMx2LUixlnN_Fu45JpFB yMQTWVwLJ5bV8VGiaqU3 Yn2Ei5QZn19gria6LjZj"
+              />
+              <h3>Rainy Hits</h3>
+              <p>Music for your mood only for you</p>
+            </div>
+          </div>
         </div>
-      
+
+        <div class="play-bar">
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+          <div class="play-info">
+            <div class="play-button">
+              <!-- <button id="audio"></button> -->
+              <img src="previous.svg" alt="" />
+              <img src="play.svg" alt="" />
+              <img src="next.svg" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

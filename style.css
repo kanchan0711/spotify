@@ -16,6 +16,7 @@ body{
 }
 .right{
     width: 75vw;
+    position: relative;
 }
 
 .list ul li{
@@ -25,7 +26,7 @@ body{
     font-weight: bold;
     list-style: none;
 }
-.your-library{
+.library-heading{
     display: flex;
     gap: 20px;
 }
@@ -87,7 +88,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 1vw;   
-    overflow: scroll;
+    /* overflow: scroll; */
     max-height: 60vw;
 }
 .card{
@@ -150,3 +151,64 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: #555; /* Color of the scrollbar thumb on hover */
   }
+
+
+
+
+.play-bar{
+    /* display: flex; */
+    gap: 50px;
+    /* justify-content: center;s */
+    bottom: 0;
+    width: 100%;
+    background-color: #3c3c3c;
+    position: fixed;
+    width: 73vw;
+    height: 40px;
+    text-align: center;
+}
+
+.playlist ul {
+    height: 20vw;
+    overflow: scroll;
+}
+.playlist ul li{
+    list-style-type: decimal;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    border: 0.5px solid rgb(172, 168, 168);
+    margin: 15px;
+    padding: 10px 5px;
+    border-radius: 8px;
+}
+/* .play-info{
+    display: flex;
+    /* width: 100px; 
+    gap: 5px;
+} */
+.play-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    gap: 5px;
+}
+
+.seekbar{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    border: 2px solid red;
+    width: 98%;
+   
+}
+.circle{
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    background-color: pink;
+    left: 0%;
+    transition: left 0.5s;
+}
