@@ -18,7 +18,7 @@ async function getSongs(){
 }
 
 const playMusic=(track)=>{
-    let audio = new Audio(  track)
+    let audio = new Audio("/songs/" +  track)
     audio.play();
 }
 
@@ -33,6 +33,7 @@ async function main(){
           <img class="invert" src="playmusic.svg" alt="">
           <div>
             <div>${song.replaceAll("%20", " ")}</div>
+            
             <div>song artist</div>
           </div>
         </div>
@@ -51,15 +52,24 @@ async function main(){
         console.log(duration);
     })
 
-    Array.from(document.querySelector(".playlist").getElementsByTagName("li")).forEach(e =>{
-        e.addEventListener("click", element =>{
-            // console.log(e.querySelector(".play-info").firstElementChild.innerHTML)
-            // playmusic(e.querySelector(".play-info").firstElementChild.innerHTML.trim)
+    // Array.from(document.querySelector(".playlist").getElementsByTagName("li")).forEach(e =>{
+    //     e.addEventListener("click", element =>{
+    //         console.log(e.querySelector(".play-info").firstElementChild.innerHTML)
+    //         // playMusic(e.querySelector(".play-info").firstElementChild.innerHTML.trim)
         
-            let songName = e.querySelector(".play-info > div > div:first-child").innerText.trim();
-            let songUrl = songs.find(s => decodeURIComponent(s.split("/songs/")[1]) === songName);
-            playMusic(songUrl);
+    //         // let songName = e.querySelector(".play-info > div > div:first-child").innerText.trim();
+    //         // let songUrl = songs.find(s => decodeURIComponent(s.split("/songs/")[1]) === songName);
+    //         // playMusic(songUrl);
+    //     })
+    //   })
+
+
+    Array.from(document.querySelector(".playlist").getElementsByTagName("li")).forEach(e => {
+        e.addEventListener("click", element =>{
+            playMusic(e.querySelector(".play-info > div").firstElementChild.innerHTML.trim())
         })
-      })
+        console.log(e.querySelector(".play-info > div").firstElementChild.innerHTML)
+    })
+
 }
 main();
